@@ -52,7 +52,7 @@ div.jumbotron {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #ccc;
+  background-color: #ddd;
 }
 
 div.jumbotron-left {
@@ -97,8 +97,10 @@ div.start-here-button span {
 
 /* ANY SECTION */
 
+/* CARD */
+
 div.gray {
-  background-color: #ccc;
+  background-color: #ddd;
 }
 
 div.card {
@@ -130,6 +132,34 @@ div.card-right span {
   margin: 0.5rem 0;
 }
 
+/* "VERTICAL" CARD */
+
+div.card-vertical {
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: #fff;
+}
+
+img.card-vertical-image {
+  width: 100%;
+  height: auto;
+}
+
+div.card-vertical h3 {
+  margin: 1rem 1rem 0 1rem;
+}
+
+div.card-vertical span {
+  display: block;
+  margin: 0.5rem 1rem 0 1rem;
+}
+
+div.card-vertical span.last {
+  margin-bottom: 1.5rem;
+}
+
 /* FIRST SECTION */
 
 div.first-section {
@@ -158,10 +188,6 @@ div.first-section-left span.quote {
   margin: 1.5rem 0;
 }
 
-div.first-section-left span.author {
-  margin-bottom: 2rem;
-}
-
 img.first-section-image {
   width: 100%;
   height: auto;
@@ -176,7 +202,29 @@ div.first-section-right {
 
 /* SECOND SECTION */
 
+div.second-section-container {
+  width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+}
 
+div.second-section-title {
+  width: 60rem;
+  text-align: center;
+}
+
+div.second-section-title h2 {
+  margin-top: 2rem;
+}
+
+div.second-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 3.5rem;
+}
 
 /* THIRD SECTION */
 
@@ -185,7 +233,7 @@ div.third-section-container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
+  background-color: #fff;
 }
 
 div.third-section-title {
@@ -200,7 +248,6 @@ div.third-section-title h2 {
 div.third-section {
   width: 60rem;
   display: flex;
-  background-color: #fff;
 }
 
 div.third-section-left {
