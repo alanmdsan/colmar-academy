@@ -21,6 +21,12 @@ header {
   align-items: center;
 }
 
+@media only screen and (max-width: 480px) {
+  header {
+    width: 100%;
+  }
+}
+
 div.logo {
   margin-left: 1.5rem;
   display: flex;
@@ -44,13 +50,32 @@ nav.menu span {
   margin: 0 0.5rem;
 }
 
+div.header-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  div.logo {
+    display: none;
+  }
+
+  nav.menu {
+    display: none;
+  }
+
+  div.header-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 /* JUMBOTRON */
 
 div.jumbotron {
   width: 60rem;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   background-color: #ddd;
 }
@@ -95,6 +120,36 @@ div.start-here-button span {
   margin: 0.5rem 0;
 }
 
+@media only screen and (max-width: 480px) {
+  div.jumbotron {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  div.jumbotron-left {
+    width: 100%;
+    margin: 0;
+  }
+  
+  div.jumbotron-right {
+    width: 100%;
+    margin: 0 1rem;
+    align-items: center;
+  }
+
+  div.jumbotron-right h1 {
+    margin: 2rem 1rem;
+  }
+
+  div.jumbotron-right h3 {
+    margin: 0 1rem;
+  }
+  
+  div.start-here-button {
+    margin: 1.5rem 0 2rem 0;
+  }
+}
+
 /* ANY SECTION */
 
 /* CARD */
@@ -120,6 +175,12 @@ img.card-image {
   height: 100%;
 }
 
+img.card-image-mobile {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
 div.card-right {
   width: 65%;
   margin-right: 1rem;
@@ -130,6 +191,51 @@ div.card-right {
 div.card-right span {
   display: block;
   margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 480px) {
+  div.gray {
+    background-color: #fff;
+  }
+
+  div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  div.card-left {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    display: block;
+  }
+  
+  img.card-image {
+    display: none;
+  }
+  
+  img.card-image-mobile {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  div.card-right {
+    width: 80%;
+    margin: 0 2rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.card-right-last {
+    margin-bottom: 2rem;
+  }
+  
+  div.card-right span {
+    display: block;
+    margin: 0.5rem 0;
+  }
 }
 
 /* "VERTICAL" CARD */
@@ -160,6 +266,28 @@ div.card-vertical span.last {
   margin-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  div.card-vertical {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    background-color: #ddd;
+  }
+
+  img.card-vertical-image {
+    display: none;
+  }
+
+  div.card-vertical h3 {
+    margin: 1rem 1rem 1.5rem 1rem;
+  }
+
+  div.card-vertical span {
+    display: none;
+  }
+}
+
 /* FIRST SECTION */
 
 div.first-section {
@@ -169,6 +297,12 @@ div.first-section {
   background-color: #fff;
 }
 
+@media only screen and (max-width: 480px) {
+  div.first-section {
+    width: 100%;
+  }
+}
+
 div.first-section-left {
   width: 60%;
   margin: 2rem 1.5rem;
@@ -176,11 +310,17 @@ div.first-section-left {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 480px) {
+  div.first-section-left {
+    display: none;
+  }
+}
+
 div.first-section-left h2 {
   margin-top: 2rem;
 }
 
-  div.first-section-left span {
+div.first-section-left span {
   display: block;
   margin-top: 1.5rem;
 }
@@ -195,6 +335,12 @@ div.first-section-right {
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 480px) {
+  div.first-section-right {
+    width: 100%;
+  }
 }
 
 /* SECOND SECTION */
@@ -221,6 +367,22 @@ div.second-section {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1rem 3.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  div.second-section-container {
+    border-top: 1px solid #ddd;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  div.second-section-title {
+    width: 100%; 
+  }
+  
+  div.second-section {
+    margin: 1.5rem 0 2rem 0;
+  }
 }
 
 /* THIRD SECTION */
@@ -270,6 +432,38 @@ div.third-section-right {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 480px) {
+  div.third-section-container {
+    border-top: 1px solid #ddd;
+    width: 100%;
+  }
+
+  div.third-section-title {
+    width: 100%;
+  }
+
+  div.third-section {
+    width: 100%;
+  }
+
+  div.third-section-left {
+    width: 100%;
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  div.third-section-left h2 {
+    display: none;
+  }
+  
+  div.third-section-left span {
+    display: none;
+  }
+
+  div.third-section-right {
+    display: none;
+  }
+}
+
 /* FOOTER */
 
 footer {
@@ -293,4 +487,19 @@ div.terms {
 div.terms span {
   display: block;
   margin: 0 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    width: 100%;
+    height: auto;
+  }
+
+  div.copyright {
+    margin: 1rem;
+  }
+
+  div.terms {
+    display: none;
+  }
 }
