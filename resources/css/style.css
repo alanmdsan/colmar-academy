@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: "Roboto", Helvetica, sans-serif;
+  color: #2A3139;
 }
 
 h1, h2, h3 {
@@ -40,7 +41,7 @@ div.logo {
 }
 
 span.logo-academy {
-  color: #ccc;
+  color: #DCDDDE;
 }
 
 img.logo-image {
@@ -112,7 +113,7 @@ div.jumbotron {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  background-color: #ddd;
+  background-color: #DCDDDE;
 }
 
 div.jumbotron-left {
@@ -147,7 +148,7 @@ div.start-here-button {
   text-align: center;
   width: 16rem;
   margin: 1rem 0;
-  background-color: #666;
+  background-color: #6D757C;
   transition: background-color 0.3s linear;
   cursor: pointer;
 }
@@ -160,7 +161,7 @@ div.start-here-button span {
 }
 
 div.start-here-button:hover {
-  background-color: #555;
+  background-color: #33536D;
 }
 
 @media only screen and (max-width: 480px) {
@@ -198,7 +199,7 @@ div.start-here-button:hover {
 /* CARD */
 
 div.gray {
-  background-color: #ddd;
+  background-color: #DCDDDE;
 }
 
 div.card {
@@ -242,14 +243,14 @@ div.card-right span {
 }
 
 div.card-right a {
-  color: #666;
+  color: #6D757C;
   font-family: "Ubuntu";
   text-decoration: none;
   font-size: 0.75rem;
 }
 
 div.card-right a:hover {
-  color: #555;
+  color: #33536D;
 }
 
 @media only screen and (max-width: 480px) {
@@ -333,7 +334,7 @@ div.card-vertical span.last {
     display: flex;
     flex-direction: column;
     margin: 0.5rem 0.5rem 0 0.5rem;
-    background-color: #ddd;
+    background-color: #DCDDDE;
   }
 
   img.card-vertical-image {
@@ -418,7 +419,7 @@ div.second-section-container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: #ddd;
+  background-color: #DCDDDE;
 }
 
 div.second-section-title {
@@ -440,7 +441,7 @@ div.second-section {
 
 @media only screen and (max-width: 480px) {
   div.second-section-container {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #DCDDDE;
     width: 100%;
     background-color: #fff;
   }
@@ -505,7 +506,7 @@ div.third-section-right {
 
 @media only screen and (max-width: 480px) {
   div.third-section-container {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #DCDDDE;
     width: 100%;
   }
 
@@ -543,7 +544,7 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #DCDDDE;
 }
 
 div.copyright {
