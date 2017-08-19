@@ -1,8 +1,3 @@
-@viewport {
-  width: device-width;
-  zoom: 1;
-}
-
 html {
   font-size: 16px;
 }
@@ -72,6 +67,26 @@ div.header-mobile {
     width: 100%;
     display: flex;
     justify-content: space-around;
+  }
+
+  img.colmar-logo-icon {
+    width: 27px;
+    height: 32px;
+  }
+
+  img.campus-icon {
+    width: 27px;
+    height: 32px;
+  }
+
+  img.online-icon {
+    width: 30px;
+    height: 32px;
+  }
+
+  img.login-icon {
+    width: 24px;
+    height: 32px;
   }
 }
 
