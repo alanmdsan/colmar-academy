@@ -132,12 +132,18 @@ div.start-here-button {
   width: 16rem;
   margin: 1rem 0;
   background-color: #666;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
 }
 
 div.start-here-button span {
   color: #fff;
   display: block;
   margin: 0.5rem 0;
+}
+
+div.start-here-button:hover {
+  background-color: #555;
 }
 
 @media only screen and (max-width: 480px) {
